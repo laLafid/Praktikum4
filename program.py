@@ -6,7 +6,7 @@ def nilai(str):
         except ValueError:
             print("Input harus angka!!")
 
-# variable yang kosong
+# list yang kosong
 r = []
 
 # perulangan untuk meminta input dari pengguna
@@ -17,6 +17,8 @@ while True:
     UTS      = nilai("Masukkan Nilai UTS: ")
     UAS      = nilai("Masukkan Nilai UAS: ")
     Akhir    = ((Tugas*0.3) + (UTS*0.35) + (UAS*0.35))
+    
+    # menyimpan data ke list
     r.append({
         "Nama": Nama, 
         "NIM": NIM, 
@@ -25,7 +27,8 @@ while True:
         "Nilai UAS": UAS, 
         "Nilai Akhir": Akhir
         })
-    # menanyakan untuk menambah data, apabila menerima inout "t" maka program akan menampilkan data
+    
+    # 
     ulang    = input("Tambah data lagi? (y/t): ").lower()
     if ulang == "t":
         break

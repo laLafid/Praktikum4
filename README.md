@@ -8,4 +8,22 @@
 5. Data yang telah dimasukkan disimpan kedalam ```r```, dan pengguna diminta untuk menentukan apakah mereka ingin menambah data lagi. Loop berhenti jika input adalah (t).
 6. Setelah loop selesai, program mencetak tabel yang berisi data yang telah dimasukan, termasuk nilai akhir.
 
+# Gambaran Flowchart
+![alt text](gambar/flowchart.png)
 
+# Blok Kode
+
+### Fungsi
+![alt text](gambar/fungsi.png)
+Ini bertujuan untuk memberikan loop ke setiap permintaan input, memastikan input adalah angka dan mengulang kembali permintaan jika input bukan lah angka.
+### Dictionary
+![alt text](gambar/listr.png)
+sebagai tempat untuk menyimpan setiap data yang diinputkan.
+### Loop
+![alt text](gambar/loop.png)
+### Menambahkan data
+![alt text](gambar/appane.png)
+### Mencetak Tabel
+![alt text](gambar/tabl.png)
+menggunakan format ```:^ .1f```
+untuk melebarkan output, ```^``` text akan berada ditengah-tengah, ```.1f``` untuk memendekan nilai float.
