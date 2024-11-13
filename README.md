@@ -1,7 +1,7 @@
 # Program Input Data
 
 # Cara Kerja Program Ini
-1. Untuk memastikan bahwa input adalah angka desimal atau float, program mendefinisikan fungsi ```nilai(str)```.
+1. Untuk memastikan input adalah angka desimal atau float, program mendefinisikan fungsi ```nilai(str)```.
 2. Program membuat list kosong ```r``` untuk menyimpan data.
 3. Dalam loop utama, program meminta nama pengguna, NIM, nilai tugas, nilai UTS, dan nilai UAS. 
 4. Program kemudian menghitung nilai akhir berdasarkan bobot nilai: tugas 30%, UTS 35%, dan UAS 35%. 
