@@ -1,10 +1,16 @@
-# fungsi pencegahan errorr
+# fungsi untuk memastikan input adalah angka
+# dan mengulangi permintaan jika input bukan angka
+# jjuga membatasi nilai dari 0 hingga 100.
 def nilai(str):
     while True:
         try:
-            return float(input(str))
+            poin = float(input(str))
+            if poin < 0 or poin > 100:
+                print(f"Nilai harus berkisar dari 0 hingga 100.")
+            else:
+                return poin
         except ValueError:
-            print("Input harus angka!!")
+            print("Input harus berupa angka!!")
 
 # list yang kosong
 r = []
@@ -12,7 +18,7 @@ r = []
 # perulangan untuk meminta input dari pengguna
 while True:
     Nama     = input("Masukkan Nama: ")
-    NIM      = int(nilai("Masukkan NIM (e.g. 123456789): "))
+    NIM      = int(input("Masukkan NIM (e.g. 123456789): "))
     Tugas    = nilai("Masukkan Nilai Tugas: ")
     UTS      = nilai("Masukkan Nilai UTS: ")
     UAS      = nilai("Masukkan Nilai UAS: ")
@@ -28,12 +34,12 @@ while True:
         "Nilai Akhir": Akhir
         })
     
-    # 
+    # setelahnya akan menanyakan apakah pengguna ingin menambahkan data
+    # jika input adalah "t" maka loop berhenti
     ulang    = input("Tambah data lagi? (y/t): ").lower()
     if ulang == "t":
         break
     
-
 # untuk mencetak table data
 print('_'*70)
 print(f"| {'No':^3} | {'Nama':^10} | {'NIM':^10} | {'Tugas':^6} | {'UTS':^6} | {'UAS':^6} | {'Akhir':^6} |")

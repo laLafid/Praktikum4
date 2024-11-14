@@ -11,13 +11,15 @@
 # Gambaran Flowchart
 ![alt text](gambar/flowchart.png)
 
-# Blok Kode
+# Struktur Kode
 
 ### Fungsi
 ![alt text](gambar/fungsi.png)
-Ini bertujuan untuk memberikan loop ke setiap permintaan input, memastikan input adalah angka dan mengulang kembali permintaan jika input bukan lah angka.
+
+Ini bertujuan untuk memberikan loop ke setiap permintaan input, memastikan input adalah angka akan mengulang kembali permintaan jika input bukan lah angka dan memastikan input yang diberikan ada di kisaran 0 hingga 100.
 ### Dictionary
 ![alt text](gambar/listr.png)
+
 sebagai tempat untuk menyimpan setiap data yang diinputkan.
 ### Loop
 ![alt text](gambar/loop.png)
@@ -25,6 +27,7 @@ sebagai tempat untuk menyimpan setiap data yang diinputkan.
 ![alt text](gambar/appane.png)
 ### Mencetak Tabel
 ![alt text](gambar/tabl.png)
+
 menggunakan format ```:^ .1f```
 untuk melebarkan output, ```^``` text akan berada ditengah-tengah, ```.1f``` untuk memendekan nilai float.
 
