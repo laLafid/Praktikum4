@@ -11,10 +11,8 @@ def nilai(str):
                 return poin
         except ValueError:
             print("Input harus berupa angka!!")
-
 # list yang kosong
 r = []
-
 # perulangan untuk meminta input dari pengguna
 while True:
     Nama     = input("Masukkan Nama: ")
@@ -23,7 +21,6 @@ while True:
     UTS      = nilai("Masukkan Nilai UTS: ")
     UAS      = nilai("Masukkan Nilai UAS: ")
     Akhir    = ((Tugas*0.3) + (UTS*0.35) + (UAS*0.35))
-    
     # menyimpan data ke list
     r.append({
         "Nama": Nama, 
@@ -32,14 +29,12 @@ while True:
         "Nilai UTS": UTS, 
         "Nilai UAS": UAS, 
         "Nilai Akhir": Akhir
-        })
-    
+        })    
     # setelahnya akan menanyakan apakah pengguna ingin menambahkan data
     # jika input adalah "t" maka loop berhenti
     ulang    = input("Tambah data lagi? (y/t): ").lower()
     if ulang == "t":
         break
-    
 # untuk mencetak table data
 print('_'*70)
 print(f"| {'No':^3} | {'Nama':^10} | {'NIM':^10} | {'Tugas':^6} | {'UTS':^6} | {'UAS':^6} | {'Akhir':^6} |")
