@@ -27,3 +27,6 @@ sebagai tempat untuk menyimpan setiap data yang diinputkan.
 ![alt text](gambar/tabl.png)
 menggunakan format ```:^ .1f```
 untuk melebarkan output, ```^``` text akan berada ditengah-tengah, ```.1f``` untuk memendekan nilai float.
+
+# Output Dari Program Ini
+![alt text](gambar/Hasil.png)
